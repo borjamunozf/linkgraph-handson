@@ -1,6 +1,10 @@
 package graph
 
-import "time"
+import (
+	"time"
+
+	"github.com/google/uuid"
+)
 
 type Graph interface {
 	UpsertLink(link *Link) error
